@@ -2,6 +2,15 @@ package us.jsadi.numwrappers;
 
 import java.util.Scanner;
 
+/**
+ * This is the driver class for this package.
+ * It takes user input, then attempts to parse the input into progressively larger number data types.
+ * If the input can be parsed, the data type it was parsed into is printed.
+ * If none of those parses work, an error message is printed.
+ * Created by jsadi on 9/19/2018
+ * @author Jordan Sadi
+ * @version 2018 0919 .3
+ */
 public class Main {
     public static void main(String[] args) {
         Scanner k = new Scanner(System.in);
