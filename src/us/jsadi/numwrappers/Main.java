@@ -36,10 +36,15 @@ public class Main {
                         System.out.println(userNum + " is a long");
                     } catch (Exception l) {
                         try {
-                            double userNum = Double.parseDouble(userInput);
-                            System.out.println(userNum + " is a double");
-                        } catch (Exception d) {
-                            System.out.println("Input is too large or is not a number");
+                            float userNum = Float.parseFloat(userInput);
+                            System.out.println(userNum + "is a float");
+                        } catch (Exception f) {
+                            try {
+                                double userNum = Double.parseDouble(userInput);
+                                System.out.println(userNum + " is a double");
+                            } catch (Exception d) {
+                                System.out.println("Input is too large or is not a number");
+                            }
                         }
                     }
                 }
